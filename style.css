@@ -1,0 +1,194 @@
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  animation: fadeIn 1s ease-in-out; /* انیمیشن کلی برای صفحه */
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+header {
+  background: #007bff;
+  padding: 10px 0;
+  color: white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+li a:hover {
+  transition: 0.5s;
+  color: orange;
+}
+
+section {
+  text-align: center;
+  margin: 20px 0;
+  padding: 20px;
+  background: white;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transform: translateY(10px);
+  transition: transform 0.5s, box-shadow 0.5s; /* انیمیشن برای افزایش اثر */
+}
+
+section:hover {
+  transform: translateY(0px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* اثری که وقتی موس روی بخش می‌رود */
+}
+
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 1s forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.welcome,
+.about,
+.contact {
+  animation: slideIn 0.5s forwards; /* انیمیشن ورود پیشرفته */
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+footer {
+  text-align: center;
+  padding: 10px 0;
+  background-color: #ddd;
+}
+.book-list {
+  list-style: none;
+  padding: 0;
+}
+
+.book-item {
+  background: #f8f9fa;
+  margin: 15px 0;
+  padding: 15px;
+  border-left: 5px solid #007bff; /* نوار رنگی سمت چپ */
+  border-radius: 5px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.book-item:hover {
+  transform: translateY(-5px); /* افکت حرکت بالا هنگام هاور */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* سایه بیشتر هنگام هاور */
+}
+
+.book-item h3 {
+  margin: 0;
+  color: #007bff; /* رنگ عنوان */
+}
+
+.book-item p {
+  margin: 5px 0;
+}
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+  }
+
+  .book-category h3 {
+    font-size: 1.5em;
+  }
+
+  .book-item {
+    padding: 10px;
+  }
+
+  h1 {
+    font-size: 1.8em;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.6em;
+  }
+
+  nav li {
+    margin: 5px 0;
+  }
+
+  .book-item {
+    padding: 8px;
+  }
+
+  .book-item h4 {
+    font-size: 1.2em;
+  }
+}
+
+p {
+  text-align: center;
+}
+
+hr {
+  margin: 10px;
+  box-shadow: 0px 0px 10px black;
+}
+h4 {
+  text-align: right;
+}
+#card {
+  display: inline-block;
+  margin: 20px 0;
+  padding: 90px;
+  background: white;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  transform: translateY(10px);
+  transition: transform 0.5s, box-shadow 0.5s; /* انیمیشن برای افزایش اثر */
+}
+#card-user {
+  text-align: center;
+}
+
+#card:hover {
+  transform: translateY(0px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* اثری که وقتی موس روی بخش می‌رود */
+}
+#flk{
+  display: inline-block;
+  margin: auto 50px;
+}
